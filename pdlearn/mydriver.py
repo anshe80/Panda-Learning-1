@@ -99,9 +99,9 @@ class Mydriver:
             "%3Fappid%3Ddingoankubyrfkttorhpou%26response_type%3Dcode%26scope%3Dsnsapi"
             "_login%26redirect_uri%3Dhttps%3A%2F%2Fpc-api.xuexi.cn%2Fopen%2Fapi%2Fsns%2Fcallback"
         )
-        self.driver.find_elements_by_id("mobilePlaceholder")[0].click()
+        self.driver.find_elements_by_class_name("mobile_content")[0].click()
         self.driver.find_element_by_id("mobile").send_keys(d_name)
-        self.driver.find_elements_by_id("mobilePlaceholder")[1].click()
+        self.driver.find_elements_by_class_name("mobile_content")[1].click()
         self.driver.find_element_by_id("pwd").send_keys(pwd)
         self.driver.find_element_by_id("loginBtn").click()
         time.sleep(3)
